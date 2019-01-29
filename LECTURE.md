@@ -6,3 +6,7 @@
   - 도메인 주소 요청시 WS는 반응하여 index.html코드를 브라우저에 전
 - client(request) server(response)
 - host(201.123.123.213: ip address) vs domain(a[name].com: domain name)
+
+## tip wifi address find
+- window: window + R -> cmd -> ipconfig
+- mac: option + mouse left click +  wifi icon
