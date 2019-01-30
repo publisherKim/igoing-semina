@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style>
-    div {
-      border: solid 10px red;
-    }
-    .container {
-      display: grid;
-      border-color: blue;
-      grid-template-columns: 1fr 2fr 1fr;
-    }
-  </style>
-</head>
+<html>
+
 <body>
-  <div class="container">
-      <div>LEFT</div>
-      <div>CENTER</div>
-      <div>RIGHT</div>
-  </div>
-  <div>new LINE</div>
+    <style>
+        div {
+            border: 10px solid red;
+        }
+        #container{
+            display:grid;
+            border-color:blue;
+            grid-template-columns: 100px 2fr 1fr;
+        }
+    </style>
+    <div id="container">
+        <div>LEFT</div>
+        <div>CENTER</div>
+        <div>RIGHT</div>
+    </div>
+    <div>NEW LINE</div>
 </body>
+
 </html>
