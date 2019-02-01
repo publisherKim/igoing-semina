@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script>
+    var member = ['이고잉', '강두루', '이태호', '이숙번', '그라탕', '리체'];
+  </script>
 </head>
 <body>
   <script>
     var i = 0;
-    while( i < 3) {
-      console.log(1);
+    while (i < member.length) {
+      document.write('<li>' + member[i] + '</li>');
       i = i + 1;
     }
   </script>

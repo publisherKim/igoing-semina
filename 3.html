@@ -26,15 +26,17 @@
                     body.style.color = 'white';
                     //이 버튼의 value 값을 day로 바꿔!
                     this.value = 'day';
+                    colorChange(this.value);
                 } else { // night가 아니라면
                     body.style.backgroundColor = '#fff';
                     body.style.color = 'black';
                     //이 버튼의 value 값을 night로 바꿔!
                     this.value = 'night';
+                    colorChange(this.value);
                 }
             ">
             <input type="button" value="day" onclick="
-                var body = document.querySelector('body');
+                var body = document.querySelector('body');                
                 body.style.backgroundColor = '#001100';
                 body.style.color = 'black';
             ">
@@ -42,10 +44,20 @@
                 var body = document.querySelector('body');
                 body.style.backgroundColor = 'black';
                 body.style.color = 'white';
+                var eleA = document.querySelectorAll('a');
             ">
             <h2>JavaScript</h2>
             JavaScript is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, veniam.
         </div>
     </div>
+    <script>
+      function colorChange(time) {
+        var eleA = document.querySelectorAll('a');
+        var i = 0;
+        for (i; i < eleA.length; i++) {
+          time === 'day' ? eleA[i].style.color = 'red' : eleA[i].style.color = 'blue';
+        }
+      }
+    </script>
 </body>
 </html>
