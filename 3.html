@@ -14,10 +14,31 @@
             <li><a href="1.html">html</a></li>
             <li><a href="2.html">css</a></li>
             <li><a href="3.html">javascript</a></li>
-            <li><a href="4.html">Node</a>.js</li>
+            <li><a href="4.html">Node.js</a></li>
         </ol>
         <div>
+            <input id="day_night" type="button" value="night" onclick="
+                var body = document.querySelector('body');
+                // 만약에 이 버튼의 value 값이 night라면
+                if(this.value === 'night') {
+                    body.style.backgroundColor = 'black';
+                    body.style.color = 'white';
+                    //이 버튼의 value 값을 day로 바꿔!
+                    this.value = 'day';
+                } else { // night가 아니라면
+                    body.style.backgroundColor = '#001100';
+                    body.style.color = 'black';
+                    //이 버튼의 value 값을 night로 바꿔!
+                    this.value = 'night';
+                }
+            ">
+            <input type="button" value="day" onclick="
+                var body = document.querySelector('body');
+                body.style.backgroundColor = '#001100';
+                body.style.color = 'black';
+            ">
             <input type="button" value="night" onclick="
+<<<<<<< HEAD
               document.querySelector('body').style.backgroundColor = 'black';
               document.querySelector('body').style.color = '#fff';
             "/>
@@ -25,13 +46,15 @@
               document.querySelector('body').style.backgroundColor = 'white';
               document.querySelector('body').style.color = 'black';
             "/>
+=======
+                var body = document.querySelector('body');
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+            ">
+>>>>>>> 7b964e87a784b9da52f3f5fb3cf2699090a0a41a
             <h2>JavaScript</h2>
             JavaScript is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, veniam.
         </div>
     </div>
-    <script>
-        
-    </script>
 </body>
-
 </html>
